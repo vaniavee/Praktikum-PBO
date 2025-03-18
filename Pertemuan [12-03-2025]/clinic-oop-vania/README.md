@@ -2,10 +2,19 @@
 <p align="center">Vania Noverina</p>
 <p align="center">2311110031</p>
 
-## Description
+## 📣 Description
+My Clinic Management System merupakan sebuah sistem klinik sederhana yang mencakup pengelolaan data dokter, pasien, janji temu (appointment), dan diagnosis. 
 
+### Tujuan Sistem:
+<pre>
+✅ Menyimpan data dokter dan spesialisasinya.
+✅ Menyimpan data pasien, termasuk usia dan penyakitnya.
+✅ Membuat janji temu antara dokter dan pasien.
+✅ Memeriksa validitas data pasien sebelum diproses.
+✅ Menghitung total diagnosis yang telah diberikan oleh dokter.
+</pre>
 
-## Project Structure
+## 📍 Project Structure
 ```
 Praktikum [12-03-2025]/
 └── clinic-oop-vania/
@@ -29,10 +38,10 @@ Praktikum [12-03-2025]/
         │   │   ├── DataChecker.java
         │   │   ├── DiagnosisCounter.java
         ├── Clinic.java
-└── README.md
+    └── README.md
 ```
 
-## Class Description
+## 📂 Class Description
 ### 1. Doctor.java
   Kelas ini merepresentasikan dokter.
   #### Terdapat 3 atribut, yaitu:
@@ -105,14 +114,25 @@ Menghitung jumlah diagnosis pasien.
 ### 6. Clinic.java
 #### Class Clinic merupakan `main class` atau entry point dari program. 
 Kelas ini memeiliki beberapa fungsi seperti:
-```
+<pre>
     1. Membuat schedules appointment pasien dengan dokter.
     2. Menampilkan schedules appointment.
     3. Menampilkan data diagnosis penyakit pasien.
     4. Menampilkan total diagnosis dokter.
-```
+</pre>
+
+---
+
+## 📌 Cara Kerja Sistem
+- Sistem akan membuat terlebih dahulu daftar dokter dan pasien.
+- Sebelum pasien masuk ke sistem, `DataChecker` akan memverifikasi data.
+- Jika data valid, sistem membuat janji temu dan menambah diagnosis ke `DiagnosisCounter`.
+-  Semua data dokter, pasien, dan janji temu (appointment) akan ditampilkan di layar.
 
 ## 🚀 Output 
+Setelah dijalankan, sistem akan mencetak daftar dokter, pasien, janji temu, diagnosis penyakit pasien, dan total diagnosis yang dibuat.
+
+![Image](https://github.com/user-attachments/assets/c491d975-191d-4b98-ba87-c8d044f46e99) 
 
 
 
