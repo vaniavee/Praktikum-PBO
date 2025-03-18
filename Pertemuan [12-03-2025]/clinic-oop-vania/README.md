@@ -1,5 +1,4 @@
-# <h1 align="center">Laporan Praktikum Algoritma dan Struktur Data</h1>
-# <h1 align="center">Modul 5 - Struct dan Implementasi</h1>
+# <h1 align="center"> 🚑 My Clinic Management System 🏥</h1>
 <p align="center">Vania Noverina</p>
 <p align="center">2311110031</p>
 
@@ -35,7 +34,8 @@ Praktikum [12-03-2025]/
 
 ## Class Description
 ### 1. Doctor.java
-  #### Kelas ini memiliki 3 atribut, yaitu:
+  Kelas ini merepresentasikan dokter.
+  #### Terdapat 3 atribut, yaitu:
    - name (String): Nama dokter.
    - doctorId (String): ID unik untuk setiap dokter, digunakan sebagai identifikasi.
    - specialization (String): Spesialisasi dokter, seperti "Neurologist", "Dermatologist", dll.
@@ -49,8 +49,86 @@ Praktikum [12-03-2025]/
   - getSpecialization() : Mengembalikan (return) nilai atribut specialization (spesialisasi dokter).
   - toString() : Mengembalikan (return) informasi objek doktor dalam format string.
 
-  
 ---
 
-2.  
+### 2. Patient.java
+Kelas ini merepresentasikan pasien.
+#### Terdapat 4 atribut, yaitu:
+- patientId (String): ID unik untuk setiap pasien, digunakan sebagai identifikasi.
+- name (String): Nama pasien.
+- age (int): Usia pasien.
+- complaints (String): Keluhan pasien atau alasan pasien datang ke klinik.
+
+### Methods:
+- getPatiendId() : return nilai ID pasien.
+- getName() : return nama pasien.
+- getAge() : return usia pasien.
+- getComplaints() : return keluhan penyakit pasien.
+- toString() : Return informasi objek patient dalam format string.
+
+---
+
+### 3. Appointment.java
+Kelas ini merepresentasikan appointment antara dokter dan pasien.
+#### Terdapat 5 atribut, yaitu:
+- appointmentId (String): ID janji temu (belum diinisialisasi dalam constructor).
+- doctor (Doctor): Objek dokter yang terlibat dalam janji temu.
+- patient (Patient): Objek pasien yang membuat janji temu.
+- appointmentTime (LocalDate): Waktu janji temu dalam format tanggal.
+- diagnosis (String): Diagnosis atau alasan janji temu.
+
+#### Methods:
+- getAppointmentId() : return ID janji temu (appointment).
+- getDoctor() : return dokter yang terlibat dalam janji temu.
+- getPatient() : return pasien yang membuat appointment.
+- getDiagnosis() : return diagnosis yang diberikan.
+- toString() : return informmasi objek appointment dalam format string.
+
+---
+
+### 4. DataChecker.java
+Sebelum data pasien digunakan, dilakukan validasi menggunakan kelas DataChecker.
+#### Memiliki 2 Validation Methods, yaitu:
+- isValidName: Memeriksa apakah nama pasien valid.
+- isValidAge: Memeriksa apakah usia pasien valid.
+
+---
+
+### 5. DiagnosisCounter.java
+Menghitung jumlah diagnosis pasien.
+#### Methods:
+- addDiagnosis() : menambah jumlah diagnosis.
+- getDiagnosisCount() : return jumlah diagnosis yang sudah dilakukan.
+
+---
+
+### 6. Clinic.java
+#### Class Clinic merupakan `main class` atau entry point dari program. 
+Kelas ini memeiliki beberapa fungsi seperti:
+```
+    1. Membuat schedules appointment pasien dengan dokter.
+    2. Menampilkan schedules appointment.
+    3. Menampilkan data diagnosis penyakit pasien.
+    4. Menampilkan total diagnosis dokter.
+```
+
+## 🚀 Output 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
